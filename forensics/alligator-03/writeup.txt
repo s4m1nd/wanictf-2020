@@ -1,0 +1,69 @@
+volatility -f ALLIGATOR.raw --profile=Win7SP1x86 lsadump
+
+
+
+
+[skkrrt@kali:Desktop]$ hashcat tocrack.txt -m 1000 -a 0 /usr/share/wordlists/rockyou.txt 
+hashcat (v6.1.1) starting...
+
+OpenCL API (OpenCL 1.2 pocl 1.5, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-Intel(R) Core(TM) i7-8086K CPU @ 4.00GHz, 5824/5888 MB (2048 MB allocatable), 4MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Hashes: 6 digests; 4 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Raw-Hash
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Using pure kernels enables cracking longer passwords but for the price of drastically reduced performance.
+If you want to switch to optimized backend kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Host memory required for this attack: 65 MB
+
+Dictionary cache hit:
+* Filename..: /usr/share/wordlists/rockyou.txt
+* Passwords.: 14344385
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+
+31d6cfe0d16ae931b73c59d7e0c089c0:                
+fc525c9683e8fe067095ba2ddc971889:Passw0rd!       
+5e7a211fee4f7249f9db23e4a07d7590:ilovewani       
+Approaching final keyspace - workload adjusted.  
+
+                                                 
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Name........: NTLM
+Hash.Target......: tocrack.txt
+Time.Started.....: Sun Nov 22 18:08:02 2020 (7 secs)
+Time.Estimated...: Sun Nov 22 18:08:09 2020 (0 secs)
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:  1974.7 kH/s (0.61ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 3/4 (75.00%) Digests
+Progress.........: 14344385/14344385 (100.00%)
+Rejected.........: 0/14344385 (0.00%)
+Restore.Point....: 14344385/14344385 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: $HEX[206b72697374656e616e6e65] -> $HEX[042a0337c2a156616d6f732103]
+
+Started: Sun Nov 22 18:07:48 2020
+Stopped: Sun Nov 22 18:08:11 2020
+[skkrrt@kali:Desktop]$ 
+

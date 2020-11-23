@@ -1,0 +1,3 @@
+exclusive
+101pt Easy
+XORを使った暗号です🔐

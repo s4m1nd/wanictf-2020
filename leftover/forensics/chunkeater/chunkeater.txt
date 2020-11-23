@@ -1,0 +1,5 @@
+chunk_eater
+102pt Normal
+pngの必須チャンクをワニ博士が食べてしまいました！
+
+PNGファイルフォーマット

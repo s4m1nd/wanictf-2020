@@ -1,0 +1,14 @@
+heap
+209pt Very hard
+
+nc heap.wanictf.org 9008
+これが作問者の現在の限界です。
+使用ツール例
+pwntools
+objdump
+ghidra
+セキュリティ保護
+Partial RELocation ReadOnly (RELRO)
+Stack Smash Protection (SSP)有効
+No eXecute bit(NX)有効
+Position Independent Executable (PIE)無効

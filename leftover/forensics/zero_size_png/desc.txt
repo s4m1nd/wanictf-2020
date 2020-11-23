@@ -1,0 +1,6 @@
+zero_size_png
+107pt Very hard
+
+この画像のサイズは本当に0×0ですか？
+
+PNG イメージヘッダ(IHDR)

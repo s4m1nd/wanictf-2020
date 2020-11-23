@@ -1,0 +1,6 @@
+FLAG{2020-10-26_03:01:55_UTC+0000}
+
+root@pyramid:/home/seth/Desktop/ctf/wanictf-2020/forensics/alligator_01# volatility -f ALLIGATOR.raw --profile=Win7SP1x86 pslist | grep evil.exe 
+Volatility Foundation Volatility Framework 2.6
+0x84dd6b28 evil.exe               3632   2964      1       21      2      0 2020-10-26 03:01:55 UTC+0000                                 
+

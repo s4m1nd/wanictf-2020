@@ -1,0 +1,19 @@
+ret rewrite
+104pt Normal
+nc ret.wanictf.org 9005
+stackの仕組みを学びましょう。
+関数の戻りアドレスはstackに積まれます。
+"congraturation"が出力されてもスタックのアライメントの問題でwin関数のアドレスから少しずらす必要がある場合があります。
+(echo -e "\x11\x11\x11\x11\x11\x11"; cat) | nc ret.wanictf.org 9005
+念のためpwntoolsのサンプルプログラム「pwn05_sample.py」を載せておきました。
+使用ツール例
+cat
+netcat (nc)
+echo
+pwntools
+セキュリティ保護
+Partial RELocation ReadOnly (RELRO)
+Stack Smash Protection (SSP)無効
+No eXecute bit(NX)有効
+Position Independent Executable (PIE)無効
+

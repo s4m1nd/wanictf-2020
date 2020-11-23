@@ -1,0 +1,1 @@
+nc lcg.wanictf.org 50001

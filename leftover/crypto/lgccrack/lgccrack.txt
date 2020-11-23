@@ -1,0 +1,4 @@
+LCG crack
+105pt Hard
+安全な暗号は安全な乱数から
+nc lcg.wanictf.org 50001

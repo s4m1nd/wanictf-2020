@@ -1,0 +1,13 @@
+binsh address
+102pt Easy
+nc binsh.wanictf.org 9003
+文字列はメモリのどこかに配置されています。
+strings -tx ./pwn03 | less
+使用ツール例
+netcat (nc)
+strings
+セキュリティ保護
+Full RELocation ReadOnly (RELRO)
+Stack Smash Protection (SSP)有効
+No eXecute bit(NX)有効
+Position Independent Executable (PIE)有効

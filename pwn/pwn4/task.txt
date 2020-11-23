@@ -1,0 +1,13 @@
+got rewriter
+104pt Easy
+nc got.wanictf.org 9004
+global offset table (GOT)の仕組みを理解する必要があります。
+objdump -d -M intel ./pwn04 | less
+使用ツール例
+netcat (nc)
+objdump
+セキュリティ保護
+Partial RELocation ReadOnly (RELRO)
+Stack Smash Protection (SSP)有効
+No eXecute bit(NX)有効
+Position Independent Executable (PIE)無効

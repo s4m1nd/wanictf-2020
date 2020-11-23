@@ -1,0 +1,4 @@
+root@pyramid:/home/seth/Desktop/ctf/wanictf-2020/forensics/alligator_01# volatility -f ALLIGATOR.raw --profile=Win7SP1x86 consoles | grep FLAG
+Volatility Foundation Volatility Framework 2.6
+FLAG{y0u_4re_c0n50les_master}                                                   
+

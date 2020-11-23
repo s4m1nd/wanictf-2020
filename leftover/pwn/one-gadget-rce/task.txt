@@ -1,0 +1,17 @@
+one gadget rce
+115pt Hard
+nc rce.wanictf.org 9007
+ROPを使ったlibcのロードアドレスのリークを理解する必要があります。
+libc上にあるone gadget RCE (Remote Code Execution)の探し方と呼び出し方を理解する必要があります。
+one_gadget libc-2.27.so
+使用ツール例
+pwntools
+objdump
+ROPgadget
+one_gadget
+セキュリティ保護
+Partial RELocation ReadOnly (RELRO)
+Stack Smash Protection (SSP)無効
+No eXecute bit(NX)有効
+Position Independent Executable (PIE)無効
+

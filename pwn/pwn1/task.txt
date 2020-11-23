@@ -1,0 +1,12 @@
+netcat
+101pt Beginner
+nc netcat.wanictf.org 9001
+netcat (nc)と呼ばれるコマンドを使うだけです。
+つないだら何も表示されなくても知っているコマンドを打ってみましょう。
+使用ツール例
+netcat (nc)
+gccのセキュリティ保護
+Full RELocation ReadOnly (RELRO)
+Stack Smash Protection (SSP)有効
+No eXecute bit(NX)有効
+Position Independent Executable (PIE)有効

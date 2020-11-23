@@ -1,0 +1,13 @@
+var rewrite
+101pt Beginner
+nc var.wanictf.org 9002
+stackの仕組みを理解する必要があります。
+ローカル変数はstackに積まれます。
+ローカル変数を書き換えて下さい。
+使用ツール例
+netcat (nc)
+セキュリティ保護
+Partial RELocation ReadOnly (RELRO)
+Smash Stack Protection (SSP)無効
+No eXecute bit(NX)有効
+Position Independent Executable (PIE)無効
